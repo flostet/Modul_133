@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
     <title>Benutzererfassung</title>
 </head>
 <body>
     <h1>Benutzererfassung</h1>
-    <input name="Vorname" type="text" placeholder="Vorname" required size="50"/>
-    <input name="Nachname" type="text" placeholder="Nachname" required size="50"/>
+    <input id="input_field" name="Vorname" type="text" placeholder="Vorname" required size="50"/>
+    <input id="input_field" name="Nachname" type="text" placeholder="Nachname" required size="50"/>
     <br>
-    <input name="Strasse" type="text" placeholder="Strasse" required size="80" />
-    <input name="StrassenNr" type="number" placeholder="Nr. (opt.)" size="10"/>
+    <input id="input_field" name="Strasse" type="text" placeholder="Strasse" required size="80" />
+    <input id="input_field" name="StrassenNr" type="number" placeholder="Nr. (opt.)" size="10"/>
     <br>
-    <input name="PLZ" type="tel" placeholder="PLZ" required pattern="\d{4}"/>
-    <input name="Ort" type="text" placeholder="Ort" required />
+    <input id="input_field" name="PLZ" type="tel" placeholder="PLZ" required pattern="\d{4}" size="20"/>
+    <input id="input_field" name="Ort" type="text" placeholder="Ort" list="places" required size="80" />
+	
+	<datalist id="places">
+		<option value="Luzern">
+		<option value="Sursee">
+		<option value="Emmen">
+		<option value="Zürich">
+		<option value="Basel">
+		<option value="Genf">
+	</datalist>
     <br>
 
-    <input name="Alter" type="number" placeholder="Alter (opt.)" />
-    <input name="Email" type="email" placeholder="Email-Adresse" />
-
+    <input id="input_field" name="Alter" type="number" placeholder="Alter (opt.)" min="0" size="10"/>
+    <input id="input_field" name="Email" type="email" placeholder="Email-Adresse" size="80" />
+	
+	<br>
+	<button type="cancel" >Verwerfen</button>
+	<input type="submit" name="Senden" />
 </body>
 </html>

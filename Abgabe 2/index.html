@@ -6,16 +6,25 @@
     <title>Aufgabe 04</title>
 </head>
 <body>
-    <a>Wieviele Schrauben?:</a>
+    <span>Wieviele Schrauben?:</span>
     <input type="number" id="schrauben">
     <br>
-    <a>Wieviele Muttern?:</a>
+    <span>Wieviele Muttern?:</span>
     <input type="number" id="muttern">
     <br>
-    <a>Wieviele Unterlegsscheiben?:</a>
+    <span>Wieviele Unterlegsscheiben?:</span>
     <input type="number" id="scheiben">
     <br>
-    <button>Absenden</button>
+    <button id="absenden">Absenden</button>
+    <script>
+        document.querySelector("#absenden").onclick = function() {
+            var screw = document.getElementById("schrauben").value;
+            var nut = document.getElementById("muttern").value;
+            var grommet = document.getElementById("scheiben").value;
+
+            var total = 
+        }
+    </script>
     <button>Formular löschen</button>
 </body>
 </html>
